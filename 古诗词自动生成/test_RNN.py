@@ -178,7 +178,7 @@ def gen_poetry_with_head(head):
             i += 1
         return poem
 
-poem=gen_poetry_with_head('我爱宝宝')
+poem=gen_poetry_with_head('一二三四')
 f=open('result.txt','w')
 f.write(poem)
 f.close()
