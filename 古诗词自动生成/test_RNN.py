@@ -140,8 +140,10 @@ def gen_poetry():
         # word = words[np.argmax(probs_)]
         return poem
 
-#poem = gen_poetry()
-#print(gen_poetry())
+poem = gen_poetry()
+f=open('result.txt','w')
+f.write(poem)
+f.close()
 
 
 
@@ -179,7 +181,7 @@ def gen_poetry_with_head(head):
         return poem
 
 poem=gen_poetry_with_head('一二三四')
-f=open('result.txt','w')
+f=open('result2.txt','w')
 f.write(poem)
 f.close()
 
